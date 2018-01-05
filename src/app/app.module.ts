@@ -13,9 +13,7 @@ import { AppComponent } from './app.component';
   providers: [],
   bootstrap: [AppComponent
   ], 
-  declarations: [
-  AppComponent, HighlightDirective
-  ],
+  
 
 })
 export class AppModule { }
