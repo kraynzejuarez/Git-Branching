@@ -11,6 +11,11 @@ import { AppComponent } from './app.component';
     BrowserModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent
+  ], 
+  declarations: [
+  AppComponent, HighlightDirective
+  ],
+
 })
 export class AppModule { }
