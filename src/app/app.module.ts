@@ -10,9 +10,14 @@ import { UserService } from './user.service';
     AppComponent,
     HighlightDirective,
     TitleComponent,
+
+    AwesomePipe,
+    ContactComponent,
+    ContactHighlightDirective
   ],
   imports: [
     BrowserModule, Formsodule
+
   ],
   providers: [ContactService, UserService],
   bootstrap: [AppComponent
