@@ -13,7 +13,7 @@ import { AppRoutingModule }   from './app-routing.module';
 
 
 @NgModule({
-    imports:      [ BrowserModule, CoreModule, AppRoutingModule ],
+    imports:      [ BrowserModule, CoreModule.forRoot({userName: 'Miss Marple'}), AppRoutingModule ],
   declarations: [ AppComponent ],
   bootstrap:    [ AppComponent ]
   ],
