@@ -9,14 +9,14 @@ import { ContactService }     from './contact.service';
 @NgModule({
   imports: [
     CommonModule,
-    FormsModule
+    FormsModule,
+    ContactRoutingModule
   ],
   declarations: [
   	AwesomePipe,
     ContactComponent,
     ContactHighlightDirective
   ],
-  exports: [ContactComponent],
   providers: [ContactService]
 })
 export class ContactModule { }
