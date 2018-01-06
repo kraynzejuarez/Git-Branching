@@ -12,9 +12,9 @@ import { UserService } from './user.service';
     TitleComponent,
   ],
   imports: [
-    BrowserModule
+    BrowserModule, Formsodule
   ],
-  providers: [UserService],
+  providers: [ContactService, UserService],
   bootstrap: [AppComponent
   ], 
   
