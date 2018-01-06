@@ -14,3 +14,11 @@ import { UserService }       from './user.service';
 })
 export class CoreModule {
 }
+static forRoot(config: UserServiceConfig): ModuleWithProviders {
+  return {
+    ngModule: CoreModule,
+    providers: [
+      {provide: UserServiceConfig, useValue: config }
+    ]
+  };
+}
