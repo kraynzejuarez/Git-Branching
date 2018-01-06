@@ -4,19 +4,18 @@ import { NgModule } from '@angular/core';
 
 /*App Import*/
 import { AppComponent } from './app.component';
-import { TitleComponent } from './title.component';
-import { UserService } from './user.service';
-import { HighlightDirective } from './highlight.directive';
+
+/* Core Modules */
+import { CoreModule }       from './core/core.module';
 
 /* Routing Module*/
 import { AppRoutingModule }   from './app-routing.module';
 
 
 @NgModule({
-    imports:      [ BrowserModule, AppRoutingModule ],
-  declarations: [ AppComponent, HighlightDirective, TitleComponent ],
-  providers:    [ UserService ],
-  bootstrap:    [ AppComponent ],
+    imports:      [ BrowserModule, CoreModule, AppRoutingModule ],
+  declarations: [ AppComponent ],
+  bootstrap:    [ AppComponent ]
   ],
   
 })
